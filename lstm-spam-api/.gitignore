@@ -2,6 +2,8 @@ bin/
 etc/
 include/
 share/
+lstm-spam-api.code-workspace
+pyvenv.cfg
 datasets/zips/
 datasets/spam_classification/
 datasets/exports/spam-tokenizer.json
