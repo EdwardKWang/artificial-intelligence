@@ -4,6 +4,8 @@ include/
 share/
 datasets/zips/
 datasets/spam_classification/
+datasets/exports/spam-tokenizer.json
+datasets/exports/spam-metadata.pkl
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
