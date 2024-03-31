@@ -2,6 +2,7 @@ bin/
 etc/
 include/
 share/
+notebooks/2 - Convert Dataset into Vectors.ipynb
 lstm-spam-api.code-workspace
 pyvenv.cfg
 datasets/zips/
@@ -11,6 +12,7 @@ datasets/exports/spam-metadata.pkl
 datasets/exports/spam-classifer-metadata.json
 datasets/exports/spam-classifer-tokenizer.json
 datasets/exports/spam-model.h5
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
