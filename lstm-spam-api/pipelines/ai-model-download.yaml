@@ -1,0 +1,21 @@
+context_parser: pypyr.parser.keyvaluepairs
+steps:
+  - name: pypyr.steps.contextsetf
+    in:
+      contextSetf:
+        local_dest_dir: models/spam-sms
+        file_keys:
+          [
+            "exports/spam-sms/spam-classifier-metadata.json",
+            "exports/spam-sms/spam-classifier-tokenizer.json",
+            "exports/spam-sms/spam-model.h5",
+          ]
+  - name: pypyr.steps.py
+    in:
+      py: |
+        import os
+        import pathlib
+        from dotenv import load_dotenv
+        load_dotenv()
+        dest_path = pathlib.Path(local_dest_dir).resolve()
+        print(dest_path)
