@@ -14,7 +14,8 @@ steps:
     in:
       py: |
         import os
-        print(os.environ.get("AWS_ACCESS_KEY_ID"))
+        import pathlib
         from dotenv import load_dotenv
         load_dotenv()
-        print(os.environ.get("AWS_ACCESS_KEY_ID"))
+        dest_path = pathlib.Path(local_dest_dir).resolve()
+        print(dest_path)
