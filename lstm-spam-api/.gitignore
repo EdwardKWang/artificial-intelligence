@@ -1,3 +1,6 @@
+models/
+*.pkl
+
 bin/
 etc/
 include/
@@ -7,10 +10,8 @@ lstm-spam-api.code-workspace
 pyvenv.cfg
 datasets/zips/
 datasets/spam_classification/
-datasets/exports/spam-tokenizer.json
+datasets/exports/*.json
 datasets/exports/spam-metadata.pkl
-datasets/exports/spam-classifer-metadata.json
-datasets/exports/spam-classifer-tokenizer.json
 datasets/exports/spam-model.h5
 
 
