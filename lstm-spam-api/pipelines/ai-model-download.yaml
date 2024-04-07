@@ -1,3 +1,6 @@
+# Description: This pipeline downloads the AI model files from the S3 bucket.
+# python -m pypyr pipelines/ai-model-download
+
 context_parser: pypyr.parser.keyvaluepairs
 steps:
   - name: pypyr.steps.contextsetf
