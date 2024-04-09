@@ -13,6 +13,7 @@ datasets/spam_classification/
 datasets/exports/*.json
 datasets/exports/spam-metadata.pkl
 datasets/exports/spam-model.h5
+app/main_prev.py
 
 
 # Byte-compiled / optimized / DLL files
