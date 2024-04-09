@@ -15,7 +15,7 @@ class NumpyEncoder(json.JSONEncoder):
         elif isinstance(obj, np.ndarray):
             return obj.tolist()
         return json.JSONEncoder.default(self, obj)
-    
+
 def encode_to_json(data, as_py=True):
     encoded = json.dumps(data, cls=NumpyEncoder)
     if as_py:
