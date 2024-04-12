@@ -5,8 +5,9 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    db_client_id: str = os.getenv("ASTRA_DB_CLIENT_ID")
-    db_client_secret: str = os.getenv("ASTRA_DB_CLIENT_SECRET")
+    # guide to use pydantic-settings https://medium.com/@mahimamanik.22/environment-variables-using-pydantic-ff6ccb2b8976
+    db_client_id: str = Field(..., alias="ASTRA_DB_CLIENT_ID")
+    db_client_secret: str = Field(..., alias="ASTRA_DB_CLIENT_SECRET")
     class Config:
         env_file = '.env'
         extra = 'ignore'
