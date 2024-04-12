@@ -1,4 +1,4 @@
-#This is the main module for the FastAPI application
+# This is the main module for the FastAPI application
 # uvicorn app.main:app --reload
 
 import pathlib

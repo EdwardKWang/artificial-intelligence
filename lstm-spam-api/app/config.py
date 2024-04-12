@@ -1,11 +1,11 @@
-import os
 from functools import lru_cache
 from pydantic import Field
 from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    # guide to use pydantic-settings https://medium.com/@mahimamanik.22/environment-variables-using-pydantic-ff6ccb2b8976
+    # pydantic-settings guide:
+    # https://medium.com/@mahimamanik.22/environment-variables-using-pydantic-ff6ccb2b8976
     db_client_id: str = Field(..., alias="ASTRA_DB_CLIENT_ID")
     db_client_secret: str = Field(..., alias="ASTRA_DB_CLIENT_SECRET")
     class Config:
