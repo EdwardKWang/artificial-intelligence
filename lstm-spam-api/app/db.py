@@ -6,6 +6,7 @@ from cassandra.cqlengine import connection
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
 CLUSTER_BUNDLE = str(BASE_DIR / "ignored"/ "secure-connect-lstm-spam-api.zip")
+# CLUSTER_BUNDLE = "/Users/edkwang/Google\ Drive/Code/projects/public/machine-learning/lstm-spam-api/app/ignored/secure-connect-lstm-spam-api.zip"
 
 settings = config.get_settings()
 

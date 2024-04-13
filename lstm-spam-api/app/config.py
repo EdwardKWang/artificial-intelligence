@@ -1,8 +1,9 @@
+import os
 from functools import lru_cache
 from pydantic import Field
 from pydantic_settings import BaseSettings
 
-
+os.environ['CQLSH_ALLOW_SCHEMA_MANAGEMENT'] = '1'
 class Settings(BaseSettings):
     # pydantic-settings guide:
     # https://medium.com/@mahimamanik.22/environment-variables-using-pydantic-ff6ccb2b8976
