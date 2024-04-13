@@ -43,4 +43,4 @@ def read_index(q:Optional[str] = None):
     query = q or "Hello World"
     preds_dict = AI_MODEL.predict_text(query)
     # NoSQL -> cassandra -> Datastax AstraDB
-    return {"query": query, "results":preds_dict, "db_client_id": settings.db_client_id, "db_client_secret": settings.db_client_secret}
+    return {"query": query, "results":preds_dict, "aws_secret_access_key": settings.aws_secret_access_key}
