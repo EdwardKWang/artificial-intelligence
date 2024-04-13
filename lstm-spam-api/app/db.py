@@ -1,5 +1,4 @@
 import pathlib
-import json
 from . import config
 from cassandra.cluster import Cluster
 from cassandra.auth import PlainTextAuthProvider
