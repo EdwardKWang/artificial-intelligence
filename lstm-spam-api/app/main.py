@@ -1,5 +1,6 @@
 # This is the main module for the FastAPI application
 # uvicorn app.main:app --reload
+# ngrok http 8000
 
 import pathlib
 from typing import Optional
